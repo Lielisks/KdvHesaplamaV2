@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>KDV Hesaplama Aracı</title>
+</head>
+<body>
+     <div class="container">
+        <h1>kdv hesaplama</h1>
+        <label class="label">Alış Fiyatını Giriniz: </label>
+        <input type="text" id="sayi">
+         <select class="select">
+            <option value="Kdv dahil 1" id="kdvdahil1"> %1 KDV DAHİL SEÇENEĞİ</option>
+            <option value="Kdv dahil 8" id="kdvdahil8"> %8 KDV DAHİL SEÇENEĞİ</option>
+            <option value="Kdv dahil 18" id="kdvdahil18"> %18 KDV DAHİL SEÇENEĞİ</option>
+            <option value="Kdv dahil 1" id="kdvharic1"> %1 KDV HARİÇ SEÇENEĞİ</option>
+            <option value="Kdv dahil 8" id="kdvharic8"> %8 KDV HARİÇ SEÇENEĞİ</option>
+            <option value="Kdv dahil 18" id="kdvharic18"> %18 KDV HARİÇ SEÇENEĞİ</option>
+         </select>
+        <input type="button" class="btnHesap" value="Hesapla" />
+        <div id="sonfiyat"></div>
+     </div>
+   
+     <script src="script.js"></script>      
+     
+</body>
+</html>

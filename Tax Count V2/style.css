@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+:root
+{
+    --clr-color1: #3fada8;
+    --clr-color2 : #f8b500;
+}
+*
+{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--clr-color1);
+}
+.container 
+{
+    position: relative;
+    padding: 20px 45px;
+    width:400px;
+    height: 475px;
+    background:rgba(255, 255, 255, 0.075);
+    border: 8px solid var(--clr-color1);
+    box-shadow: 
+    -5px -5px 15px rgba(255, 255, 255, 0.16), 
+     5px 5px 15px rgba(0, 0, 0, 0.136), 
+     inset -5px -5px 15px rgba(255, 255, 255, 0.133), 
+     inset 5px 5px 15px rgba(0, 0, 0, 0.152);
+     border-radius: 15px;
+}
+h1
+{
+    position: relative;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px 0;
+    color:#fff;
+    cursor:pointer;
+    outline:none;
+}
+
+h1::after
+{
+    content:'';
+    position:absolute;
+    width: 100px;
+    height: 2.5px;
+    left: 95px;
+    bottom:-5px;
+    background: var(--clr-color1);
+    transition: 0.5s;
+}
+h1:hover::after
+{
+    background: var(--clr-color2);
+}
+.radioBox
+{
+    
+    text-align: center;
+    margin: 20px -24px;
+    float:left;
+    position: relative;
+    font-size:0.85em;
+    display:grid;
+    grid-template-columns: repeat( 2, 1fr);
+}
+
+.radioBox input 
+{
+    position: relative;
+    margin: 8px 0;
+}
+.label
+{
+     font-size: 0.85em;
+     margin:10px 0;
+}
+.kdv
+{
+    font-size: 0.85em;
+}
+.container input
+{
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 6px;
+
+}
+#sayi
+{
+    border:none;
+    outline:none;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.10);
+    margin-top: 10px;
+    font-size: 0.75em;
+    font-weight:500;
+    overflow: hidden;
+    transition: 0.5s;
+    color:#121212;
+}
+#sayi:hover 
+{
+    background: var(--clr-color2);
+    color:#fff;
+}
+.container .btnHesap
+{
+    width: 100px;
+    border:none;
+    outline:none;
+    padding:10px 20px;
+    background: #f8b500;
+    margin-top: 145px;
+    color:#fff;
+}
+
+.btnHesap:hover
+{
+   scale: 1.1;
+   font-weight: 500;
+}
+
+#sonfiyat
+{
+    font-size: 0.85em;
+    margin-top: 10px;
+}
+.select 
+{
+    width: 100%;
+    margin-top: 20px;
+    background: transparent;
+    border:none;
+    outline:none;
+    font-size: 13px;
+}
